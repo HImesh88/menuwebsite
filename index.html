@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>GoGo Restaurant</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playwrite+MX+Guides&display=swap');
+    nav {
+      font-family: "Playwrite MX Guides", cursive;
+    }
+    main h1 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .menu-item {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-black to-gray-900 min-h-screen">
+  <!-- Navbar -->
+  <nav class="w-full h-16 text-amber-400 text-2xl md:text-3xl flex items-center justify-center uppercase font-bold shadow-lg">
+    <p>GoGo Restaurant</p>
+  </nav>
+
+  <!-- Main content -->
+  <main class="flex flex-col items-center py-10 px-4 sm:px-6">
+    <h1 class="text-white text-3xl md:text-4xl uppercase font-bold mb-10 tracking-wider text-center">Our Specials</h1>
+
+    <!-- Grid container -->
+    <div class="w-full max-w-5xl mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+        <!-- Chicken -->
+        <div class="menu-item bg-white/10 hover:bg-white/20 text-white p-6 rounded-xl shadow-xl backdrop-blur-md transition-all duration-300 flex items-center gap-4 justify-between"
+             onclick="redirectTo('redirects/chicken.html')">
+          <div class="text-lg font-medium">
+            <span class="text-3xl">🍗</span> Chicken Items
+          </div>
+          <div class="text-xl font-semibold">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <!-- Momo -->
+        <div class="menu-item bg-white/10 hover:bg-white/20 text-white p-6 rounded-xl shadow-xl backdrop-blur-md transition-all duration-300 flex items-center gap-4 justify-between"
+             onclick="redirectTo('redirects/momo.html')">
+          <div class="text-lg font-medium"><span class="text-3xl">🥟</span> Mo:Mo</div>
+          <div class="text-xl font-semibold">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <!-- Chowmein -->
+        <div class="menu-item bg-white/10 hover:bg-white/20 text-white p-6 rounded-xl shadow-xl backdrop-blur-md transition-all duration-300 flex items-center gap-4 justify-between"
+             onclick="redirectTo('redirects/chowmein.html')">
+          <div class="text-lg font-medium"><span class="text-3xl">🍜</span> Chowmein</div>
+          <div class="text-xl font-semibold">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <!-- Pizza -->
+        <div class="menu-item bg-white/10 hover:bg-white/20 text-white p-6 rounded-xl shadow-xl backdrop-blur-md transition-all duration-300 flex items-center gap-4 justify-between"
+             onclick="redirectTo('redirects/pizza.html')">
+          <div class="text-lg font-medium"><span class="text-3xl">🍕</span> Pizzaa</div>
+          <div class="text-xl font-semibold">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <!-- Burger -->
+        <div class="menu-item bg-white/10 hover:bg-white/20 text-white p-6 rounded-xl shadow-xl backdrop-blur-md transition-all duration-300 flex items-center gap-4 justify-between"
+             onclick="redirectTo('redirects/burger.html')">
+          <div class="text-lg font-medium"><span class="text-3xl">🍔</span> Burgerss</div>
+          <div class="text-xl font-semibold">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- JS redirect function -->
+  <script>
+    function redirectTo(page) {
+      window.location.href = page;
+    }
+  </script>
+</body>
+</html>

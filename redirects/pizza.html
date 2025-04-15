@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Pizza - GoGo Restaurant</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playwrite+MX+Guides&display=swap');
+    nav {
+      font-family: "Playwrite MX Guides", cursive;
+    }
+    h1, h2 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white min-h-screen">
+  
+  <!-- Navbar with Back Button -->
+  <nav class="w-full h-16 text-amber-400 text-xl md:text-2xl flex items-center px-4 md:px-8 shadow-md font-bold uppercase">
+    <p class="text-center w-full absolute left-0 right-0 pointer-events-none">GoGo Restaurant</p>
+    <a href="../index.html" class="flex items-center gap-2 text-amber-400 hover:text-white transition" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        Back
+    </a>
+  </nav>
+
+  <!-- Page Content -->
+  <main class="px-4 sm:px-6 lg:px-12 py-10 max-w-5xl mx-auto">
+    <h1 class="text-3xl md:text-4xl font-bold mb-4">🍕 Our Pizza Collection</h1>
+    <p class="text-gray-300 mb-8 text-lg">Hot, cheesy, and freshly baked! Discover our best-selling pizzas below.</p>
+
+    <!-- Menu Image -->
+    <div class="rounded-xl overflow-hidden shadow-lg mb-10">
+      <img src="assets/images (1).jfif  " 
+           alt="Pizza Menu" 
+           class="w-full h-auto object-cover">
+    </div>
+
+    <!-- Pizza List -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white/10 p-5 rounded-lg hover:bg-white/20 transition">
+        <h2 class="text-xl font-semibold">Margherita Pizza</h2>
+        <p class="text-sm text-gray-300">Classic tomato sauce, mozzarella, and basil leaves.</p>
+      </div>
+      <div class="bg-white/10 p-5 rounded-lg hover:bg-white/20 transition">
+        <h2 class="text-xl font-semibold">Pepperoni Feast</h2>
+        <p class="text-sm text-gray-300">Loaded with pepperoni slices and extra cheese.</p>
+      </div>
+      <div class="bg-white/10 p-5 rounded-lg hover:bg-white/20 transition">
+        <h2 class="text-xl font-semibold">BBQ Chicken Pizza</h2>
+        <p class="text-sm text-gray-300">Tangy BBQ sauce, grilled chicken, red onions, and mozzarella.</p>
+      </div>
+      <div class="bg-white/10 p-5 rounded-lg hover:bg-white/20 transition">
+        <h2 class="text-xl font-semibold">Veggie Supreme</h2>
+        <p class="text-sm text-gray-300">Bell peppers, mushrooms, olives, and onions over tomato base.</p>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
